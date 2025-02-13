@@ -10,7 +10,7 @@ import retrofit2.http.QueryMap
 interface NewsApiService {
     @GET("top-headlines")
     suspend fun getTopHeadlines(
-        @Query("country") country: String = "us",  // Pastikan parameter ini ada
+        @Query("country") country: String = "us",  
         @Query("apiKey") apiKey: String = API_KEY
     ):Response<NewsResponse>
 
